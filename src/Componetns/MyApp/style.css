@@ -1,0 +1,293 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ /* Set background color and font styles for the whole page */
+ body {
+  background-color: #f0f0f0; /* Change to your preferred background color */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 100%;
+  width: calc(100% - 320px); /* Adjusted width, 160px on both sides */
+  overflow: scroll;
+  position: relative;
+  margin-left: 160px; /* Add left margin */
+  margin-right: 160px; /* Add right margin */
+}
+
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: rgba(51, 51, 51, 0.7); /* Navbar background color with opacity */
+    color: #fff; /* Navbar text color */
+    padding: 1rem;
+    box-shadow: 5px 4px 20px 4px rgba(248, 0, 0, 0.9); /* Increase box shadow for the navbar */
+    width: 150px; /* Set the width of the navbar */
+    height: 100%; /* Set the height of the navbar to 100% of the viewport height */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center; /* Align buttons to the center horizontally */
+    justify-content: flex-start; /* Align buttons to the top of the navbar */
+    z-index: 1000; /* Set a high z-index to ensure the navbar is on top of other content */
+    opacity: 0.9; /* Add opacity to the navbar */
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add smooth transitions */
+  }
+  
+  /* Change opacity and background color on hover */
+  .navbar:hover {
+    background-color: rgba(120, 23, 232, 0.7); /* Yellow background color on hover with opacity */
+    opacity: 3; /* Restore full opacity on hover */
+    box-shadow: 5px 4px 0px 4px rgba(255, 232, 25, 0.9)
+  }
+  
+  /* Remove the default list-style-type */
+  .navbar ul {
+    list-style-type: none; /* Remove bullets/dots */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Add a box shadow to the navbar items */
+  .navbar ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+    padding: 15px 30px; /* Increase padding for buttons */
+    border-radius: 5px; /* Add rounded corners to buttons */
+    box-shadow: 6px 0px 8px 4px rgba(0, 0, 0, 0.7); /* Increase box shadow for buttons */
+    display: flex; /* Display the items as flex to control spacing */
+    align-items: center; /* Center items vertically in the navbar */
+    margin: 10px 0; /* Add margin between items */
+    width: 120px; /* Set the width of the buttons */
+  }
+  
+  /* Adjust the spacing between the icon and text */
+  .navbar ul li a i {
+    margin-right: 10px; /* Adjust the margin to control the space between the icon and text */
+  }
+  
+  /* Button hover effect */
+  .navbar ul li a:hover {
+    background-color: red; /* Button background color on hover */
+    box-shadow: 6px 0px 10px 4px rgba(0, 0, 0, 0.9); /* Increase box shadow for highlighted button on hover */
+  }
+  
+  /* Navbar hover effect */
+  .navbar:hover ul li a:hover {
+    background-color:rgb(255, 255, 0,0.9) ;/* Button background color on navbar hover */
+    text-decoration:underline;
+  }
+   /* Moving text header */
+   .header {
+    background-color: transparent; /* Set a transparent background */
+    color: #e31a1a; /* Text color */
+    font-size: 2rem; /* Font size */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text horizontally */
+    z-index: 999; /* Set a high z-index to ensure text is on top of other content */
+    animation: moveText 7s linear infinite alternate; /* Animation for moving text */
+  }
+  
+  /* Animation keyframes for moving text */
+  @keyframes moveText {
+    0% {
+      transform: translateX(70%); /* Start text off the screen to the right */
+    }
+    100% {
+      transform: translateX(-25%); /* Move text off the screen to the left */
+    }
+  }
+  
+  
+  .header h1 {
+    font-size: 2rem; /* Header title font size */
+  }
+  
+  /* Content styles */
+  .main-content {
+    max-width: 1180px;
+    width: 1150px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 3rem;
+    background-color: #eddede; /* Content background color */
+    box-shadow: 0 0 10px rgba(3, 18, 222, 0.8); /* Content box shadow */
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .description {
+    flex: 1;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow effect on description */
+  }
+  
+/* Add CSS styles for the container and boxes */
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align boxes to the left */
+    margin-right: 20px; /* Add some right margin for spacing */
+    /* margin-left: 322px; */
+    margin-top: -66px;
+  }
+  
+  /* Styling for individual boxes */
+  .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin between boxes */
+  }
+  
+  .box img {
+    width: 350px; /* Set a max width for the images */
+
+    margin-right: 20px; /* Add space between image and description */
+  }
+  
+  /* Add styling for the box description */
+  .box-description {
+    flex: 1;
+  }
+ /* Logo Styles */
+.logo {
+    position: fixed;
+    top: 1px;
+    right: 0;
+    z-index: 1000;
+    padding: 17px; /* Adjust padding as needed */
+    box-shadow: 0  0 14px 6px  rgba(3, 18, 222, 0.8);
+    width: 150px;
+    height: 105px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Add max-width to the logo */
+  .logo img {
+    max-width: 166px; /* Adjust the maximum width as needed */
+    max-height: 105px;
+    margin-top: -17px;
+    margin-left: 13px;
+  }
+  
+ /* Message Box Styles */
+.message-box {
+    position: fixed;
+    top: 105px; /* Adjust the top position as needed */
+    right: 0px;
+    z-index: 1000;
+    width: 150px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity as needed */
+    box-shadow: 0  0 14px 6px  rgba(3, 18, 222, 0.8);
+    color: yellow; /* Text color */
+    display: flex;
+    align-items: flex-start; /* Align text to start from the top */
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .message-box p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 4px;
+  }
+  
+  /* Add styles for the greeting container */
+.greeting-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  opacity: 1;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: greeting-container-animation 2s ease-in-out forwards; /* Animation to display greeting container */
+}
+
+/* Add styles for the greeting text and hands */
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hands {
+  font-size: 8rem; /* Adjust the size of the hands */
+}
+
+.text {
+  font-size: 5rem; /* Adjust the size of the text */
+  margin-left: 30px; /* Add space between hands and text */
+}
+
+/* Keyframes for greeting container animation */
+@keyframes greeting-container-animation {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  50% {
+    opacity: 0.6; /* Fade in to full opacity */
+  }
+  100% {
+    opacity: 1; /* Maintain full opacity */
+  }
+}
+
+/* Add styles for content that should appear after the greeting */
+.content-container {
+  opacity: 0;
+  animation: content-animation 4s ease-in-out forwards; /* Animation to reveal content */
+}
+
+/* Keyframes for content animation */
+@keyframes content-animation {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  50% {
+    opacity: 0.6; /* Maintain opacity at 0 */
+  }
+  100% {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+
+h2.Trendings {
+  text-align: center; /* Center the text horizontally */
+  color: #007bff; /* Blue color for the text */
+  font-size: 28px; /* Adjust the font size as needed */
+  position: relative;
+  margin-left: 46%;
+  margin-top: 30px;
+  animation: blink 1s infinite alternate; /* Add blinking animation */
+}
+
+/* for h2 */
+@keyframes blink {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    opacity: 0; /* Fully transparent */
+  }
+}

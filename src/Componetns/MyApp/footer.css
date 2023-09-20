@@ -1,0 +1,38 @@
+/* Footer Styles */
+.footer {
+    background-color: rgb(0, 0, 0,0);
+    padding: 20px 10px; /* Padding around the content */
+    text-align: center; 
+    margin-top: 340px;
+  }
+  
+  .footer-content {
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0 auto;
+  }
+  
+  .footer-copyright p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: red;
+  }
+  
+  .footer-icons {
+    font-size: 38px;
+  }
+  
+  .icon {
+    margin: 0 10px; /* Spacing between icons */
+    margin-top: 15px;
+    color: #e21010; /* Icon color */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+  
+    /* Add hover effect to icons */
+    &:hover {
+      color: #ffcc00; /* Change icon color on hover */
+    }
+  }
+  

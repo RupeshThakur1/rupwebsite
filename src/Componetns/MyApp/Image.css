@@ -1,0 +1,97 @@
+body {
+  background-color: #f0f0f0; /* Change to your preferred background color */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 100%;
+  width: calc(100% - 320px); /* Adjusted width, 160px on both sides */
+  overflow: scroll;
+  position: relative;
+  margin-left: 160px; /* Add left margin */
+  margin-right: 160px; /* Add right margin */
+}
+
+/* Create a container for the images */
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  justify-content: start; 
+  align-items: center;
+  max-height: 100vh;
+  box-sizing: border-box;
+
+}
+
+/* Style each individual image */
+.image {
+  /* You can keep your individual image styles here */
+  width: 100%; /* Set width to 100% for equal height and width */
+  height: 100%; /* Set height to 100% for equal height and width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow if the image aspect ratio is different */
+}
+
+/* Style the images themselves */
+.image img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  max-height: 100%; /* Ensure images don't exceed container height */
+  object-fit: cover; /* Crop and center the image within its container */
+}
+
+/* CSS for enlarged image */
+.enlarged {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 78%;
+  max-height: 90vh;
+  cursor: zoom-out;
+
+}
+
+
+/* BubblesContainer.css */
+
+.bubbles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through bubbles */
+  animation: bubble-fall 0s linear infinite; /* Continuous falling animation */
+}
+
+.bubbles-container {
+  position: fixed;
+  top: 0;
+  padding-left: 190px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through bubbles */
+  animation: bubble-fall 0s linear infinite; /* Continuous falling animation */
+}
+
+.bubble {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  animation: bubble-fall 30s linear infinite; /* Apply the same animation to each bubble */
+}
+
+@keyframes bubble-fall {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(110vh); /* Ensure bubbles fall beyond the viewport */
+  }
+}

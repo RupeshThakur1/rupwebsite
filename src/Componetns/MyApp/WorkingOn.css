@@ -1,0 +1,22 @@
+/* Apply styles to the body */
+body {
+  background-color: #f0f0f0; /* Change to your preferred background color */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 100%;
+  width: calc(100% - 320px); /* Adjusted width, 160px on both sides */
+  overflow: scroll;
+  position: relative;
+  margin-left: 160px; /* Add left margin */
+  margin-right: 160px; /* Add right margin */
+}
+  
+  /* Create a container for the content */
+  .content-container {
+    padding-left: 0px; /* Left padding */
+    padding-right: 100px; /* Right padding */
+    box-sizing: border-box; /* Include padding in container width */
+  }
+  

@@ -1,0 +1,47 @@
+body {
+  background-color: #f0f0f0; /* Change to your preferred background color */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 100%;
+  width: calc(100% - 320px); /* Adjusted width, 160px on both sides */
+  overflow: scroll;
+  position: relative;
+  margin-left: 160px; /* Add left margin */
+  margin-right: 160px; /* Add right margin */
+}
+ /* Experience.css */
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  text-align: left;
+}
+
+.skills-list h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.skills-list ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.skills-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+  
