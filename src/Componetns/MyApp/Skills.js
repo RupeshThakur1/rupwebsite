@@ -4,12 +4,26 @@ import './Experience.css'; // Import the CSS file
 import Footer from './Footer';
 import './Skills.css'
 
+const resumePDF = require('./images/resume.pdf');
+
 function Skills() {
   return (
     <>
       <Navbar />
       <div className="content-container">
-        <h1>Skills</h1>
+
+      <h2>My Resume</h2>
+        <div className="embedded-resume">
+          <embed src={resumePDF} type="application/pdf" width="39%" height="250px" />
+        </div>
+        <h4>
+          <a href={resumePDF} download="resume.pdf">
+            Download Resume
+          </a>
+        </h4><br /><br /><br />
+
+
+        <h1 className='skill'>Skills</h1>
         <div className="skills-list">
           <h2>1. JAVA-J2EE</h2>
 
@@ -63,7 +77,7 @@ function Skills() {
             <li><u> CSS3</u></li>
             <li><u>Javascript</u></li>
             <li><u><strong>React</strong></u></li>
-            <li><u>Angular(basics)</u></li>
+            <li className='skill'><u>Angular(basics)</u></li>
           </ul><br />
 
           <ul>

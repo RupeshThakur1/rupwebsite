@@ -10,7 +10,7 @@ function Notes({ content }) {
       <p>Welcome to Notes {content}.</p>
     </div>
     <div className="logo">
-        <img src="/Images/rupesh.jpg" alt="Logo" />
+        <img src="/Images/Rupesh.jpeg" alt="Logo" />
       </div>
       <div className="message-box">
         <p>Your Message Here...

@@ -44,7 +44,7 @@ function Images({ content }) {
         </div> 
       </div> 
       <div className="logo">
-        <img src="/Images/Rupesh.jpg" alt="Logo" />
+        <img src="/Images/Rupesh.jpeg" alt="Logo" />
       </div>
       <div className="message-box">
         <p>Your Message Here...

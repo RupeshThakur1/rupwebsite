@@ -1,9 +1,8 @@
-/* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
  /* Set background color and font styles for the whole page */
  body {
@@ -135,6 +134,7 @@
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow effect on description */
   }
+ 
   
 /* Add CSS styles for the container and boxes */
 .box-container {
@@ -143,7 +143,7 @@
     align-items: flex-start; /* Align boxes to the left */
     margin-right: 20px; /* Add some right margin for spacing */
     /* margin-left: 322px; */
-    margin-top: -66px;
+    margin-top: 65px;
   }
   
   /* Styling for individual boxes */
@@ -151,18 +151,37 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px; /* Add margin between boxes */
+   
   }
   
   .box img {
     width: 350px; /* Set a max width for the images */
-
+    height: 250px;
     margin-right: 20px; /* Add space between image and description */
+    margin-top: 20px;
+  }
+  .box img:hover {
+    width: 350px; /* Set a max width for the images */
+    height: 250px;
+    margin-right: 20px; /* Add space between image and description */
+    margin-top: 20px;
+    box-shadow:0px 0px 5px #e31a1a;
+    border-radius: 5%;
+
   }
   
   /* Add styling for the box description */
   .box-description {
     flex: 1;
-  }
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value (0.7 in this example) for transparency */
+      box-shadow: -12px 12px 0px 5px rgba(0, 0, 0, 0.6); /* Box shadow effect on description */
+    }
+    .box-description:hover {
+      background-color: rgb(59, 225, 189,0.3);
+      transition: background-color 0.1s ease;
+    }
+
  /* Logo Styles */
 .logo {
     position: fixed;
@@ -216,7 +235,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  opacity: 1;
+  opacity: 0.5;
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -246,10 +265,10 @@
     opacity: 0; /* Start with opacity 0 */
   }
   50% {
-    opacity: 0.6; /* Fade in to full opacity */
+    opacity: 0.3; /* Fade in to full opacity */
   }
   100% {
-    opacity: 1; /* Maintain full opacity */
+    opacity: 0.6; /* Maintain full opacity */
   }
 }
 
@@ -275,9 +294,9 @@
 h2.Trendings {
   text-align: center; /* Center the text horizontally */
   color: #007bff; /* Blue color for the text */
-  font-size: 28px; /* Adjust the font size as needed */
+  font-size: 38px; /* Adjust the font size as needed */
   position: relative;
-  margin-left: 46%;
+  margin-left: 42%;
   margin-top: 30px;
   animation: blink 1s infinite alternate; /* Add blinking animation */
 }
@@ -291,3 +310,4 @@ h2.Trendings {
     opacity: 0; /* Fully transparent */
   }
 }
+
